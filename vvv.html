@@ -44,8 +44,11 @@
                 // طلب تفعيل وضع الشاشة الكاملة  
                 window.Telegram.WebApp.requestFullscreen();  
                 
-                // يُفضل تعيين لون للعنوان لضمان تباين مناسب مع عناصر واجهة المستخدم  
+                // تعيين لون للعنوان لضمان تباين مناسب مع عناصر واجهة المستخدم  
                 window.Telegram.WebApp.setHeaderColor("#FFFFFF");  
+
+                // قفل اتجاه التطبيق إلى الوضع العرضي  
+                window.Telegram.WebApp.lockOrientation("landscape");  
             }  
         });  
 
